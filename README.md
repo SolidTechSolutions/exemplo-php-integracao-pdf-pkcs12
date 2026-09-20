@@ -4,7 +4,7 @@
 
 Este método (importação de certificado PKCS#12 direto no servidor) só está disponível em instâncias do SolidSign API rodando **on-premises** (localmente, na infraestrutura do próprio cliente). **Não está disponível na versão SaaS pública** do SolidSign.
 
-Motivo: a importação PKCS#12 mantém a chave privada decriptada em cache no servidor por até 2 horas — um risco aceitável numa instância on-premises própria, mas não numa instância SaaS compartilhada entre vários clientes. Se você usa o SaaS público, use `sign-hsm-cloud` (seu próprio PSC) ou a custódia KMS SolidSign em vez deste método.
+Se você usa o SaaS público, use `sign-hsm-cloud` (com o seu próprio PSC) ou a custódia KMS SolidSign em vez deste método.
 
 ## Requisitos
 
